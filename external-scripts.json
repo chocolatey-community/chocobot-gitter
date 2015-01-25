@@ -10,5 +10,7 @@
   "hubot-rules",
   "hubot-shipit",
   "hubot-youtube",
-  "hubot-thesimpsons"
+  "hubot-thesimpsons",
+  "hubot-group-alias",
+  "hubot-google-hangouts"
 ]

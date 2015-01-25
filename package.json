@@ -10,6 +10,7 @@
     "hubot-gitter2": "^0.1.3",
     "hubot-google-images": "^0.1.2",
     "hubot-google-translate": "^0.1.0",
+    "hubot-group-alias": "^1.0.0",
     "hubot-help": "^0.1.1",
     "hubot-heroku-keepalive": "0.0.4",
     "hubot-maps": "0.0.1",
@@ -18,8 +19,9 @@
     "hubot-rules": "^0.1.0",
     "hubot-scripts": "^2.5.16",
     "hubot-shipit": "^0.1.1",
+    "hubot-thesimpsons": ">= 0.0.0",
     "hubot-youtube": "^0.1.2",
-	"hubot-thesimpsons": ">= 0.0.0"
+    "hubot-google-hangouts": ">= 0.0.0"
   },
   "engines": {
     "node": "0.10.x"
