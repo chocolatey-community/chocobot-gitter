@@ -8,6 +8,39 @@ This README is intended to help get you started. Definitely update and improve t
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
+### Initial Setup
+
+To get hubot, or in our case chocobot running, these are the steps that had to be followed.  I have captured them here so that we don't forget what was done :smile_cat:
+
+**NOTE:** Although there are two hubot adapter's for Gitter, we found that only one of them works.  Namely, this [one](https://github.com/huafu/hubot-gitter2).  The other [one](https://github.com/kcjpop/hubot-gitter) seems older, and has been replaced by the one that we ended up using.
+
+* Login into [Gitter](http://gitter.im) with the Github account that you want to run as your bot
+* Join the room that you want the bot to be activated on (i.e. chocolatey/choco)
+* Install node.js (which includes npm)
+* Install Heroku Toolkit
+* `mkdir C:\heroku\chocobot`
+* `cd .\chocobot`
+* `heroku login`
+* `npm install --global coffee-script hubot`
+* `npm install --global yo generator-hubot`
+* `yo hubot` (when prompted, enter `gitter2` as adapter name, and `chocobot` as name
+* `npm install --save hubot-gitter2`
+* `git init`
+* `git add .`
+* `git commit -m "Initial commit"`
+* `heroku create`
+* `heroku config:set HUBOT_GITTER2_TOKEN=****` (here the token is the Personal Access Token for Github Account that will be running as the bot, in our case, the choco-bot user on Github.  The Personal Access Token can be retrieved from [here](https://developer.gitter.im/)
+* `heroku config:set HEROKU_URL=https://whispering-peak-2284.herokuapp.com/` (this is to keep the heroku application alive.  The URL is generated from the `heroku create` command above
+* `heroku config:set HUBOT_GITTER2_TESTING_ROOMS=chocolatey/choco` (this was used initially to verify that it was working on one room in particular, but it was later removed so that any room that choco-bot user is signed into will respond to commands)
+* `git push heroku master`
+* `heroku logs` (if all goes well here, you should see something simalar to the following)
+
+![image](https://cloud.githubusercontent.com/assets/1271146/5890975/1b0b13d4-a471-11e4-97db-9be2b5fbae77.png)
+
+If all of the above has worked, go to your Gitter Chat Room, and try issuing a hubot command like `hubot ping` and hopefully you will see the following:
+
+![image](https://cloud.githubusercontent.com/assets/1271146/5890979/96fa7066-a471-11e4-9042-b1db63b4e984.png)
+
 ### Running chocobot Locally
 
 You can test your hubot by running the following.
