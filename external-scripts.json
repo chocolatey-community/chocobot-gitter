@@ -13,5 +13,6 @@
   "hubot-thesimpsons",
   "hubot-group-alias",
   "hubot-google-hangouts",
-  "hubot-fliptable"
+  "hubot-fliptable",
+  "hubot-tell"
 ]

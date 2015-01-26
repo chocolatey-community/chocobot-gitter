@@ -22,7 +22,8 @@
     "hubot-thesimpsons": ">= 0.0.0",
     "hubot-youtube": "^0.1.2",
     "hubot-google-hangouts": ">= 0.0.0",
-	"hubot-fliptable": ">= 0.0.0"
+	"hubot-fliptable": ">= 0.0.0",
+	"hubot-tell": "*"
   },
   "engines": {
     "node": "0.10.x"
