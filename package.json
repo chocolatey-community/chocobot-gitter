@@ -25,7 +25,8 @@
 	"hubot-fliptable": ">= 0.0.0",
 	"hubot-tell": "*",
 	"hubot-humanity": ">= 0.0.0",
-	"hubot-tweets": ">= 0.0.0"
+	"hubot-tweets": ">= 0.0.0",
+	"hubot-seriouslyguys": "*"
   },
   "engines": {
     "node": "0.10.x"
