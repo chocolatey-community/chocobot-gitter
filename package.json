@@ -26,7 +26,8 @@
 	"hubot-tell": "*",
 	"hubot-humanity": ">= 0.0.0",
 	"hubot-tweets": ">= 0.0.0",
-	"hubot-seriouslyguys": "*"
+	"hubot-seriouslyguys": "*",
+	"hubot-soon": ">= 0.0.0"
   },
   "engines": {
     "node": "0.10.x"
