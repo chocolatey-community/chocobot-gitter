@@ -15,5 +15,6 @@
   "hubot-google-hangouts",
   "hubot-fliptable",
   "hubot-tell",
-  "hubot-humanity"
+  "hubot-humanity",
+  "hubot-tweets"
 ]
