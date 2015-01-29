@@ -7,6 +7,7 @@
   "dependencies": {
     "hubot": "^2.11.0",
     "hubot-diagnostics": "0.0.1",
+    "hubot-fitbit-leaders": "^1.0.3",
     "hubot-fliptable": ">= 0.0.0",
     "hubot-gitter2": "^0.1.3",
     "hubot-google-hangouts": ">= 0.0.0",
