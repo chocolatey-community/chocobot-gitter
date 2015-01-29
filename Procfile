@@ -1,1 +1,1 @@
-web: bin/hubot -a gitter2 -n chocobot
+web: bin/hubot -a $HUBOT_ADAPTER -n chocobot
