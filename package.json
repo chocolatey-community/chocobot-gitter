@@ -5,6 +5,7 @@
   "author": "Gary Ewan Park <gep13@gep13.co.uk>",
   "description": "A simple helpful robot for Chocolatey",
   "dependencies": {
+    "githubot": ">= 0.0.0",
     "hubot": "^2.11.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-fitbit-leaders": "^1.0.3",
