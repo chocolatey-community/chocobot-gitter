@@ -29,7 +29,8 @@
     "hubot-tell": "*",
     "hubot-thesimpsons": ">= 0.0.0",
     "hubot-tweets": ">= 0.0.0",
-    "hubot-youtube": "^0.1.2"
+    "hubot-youtube": "^0.1.2",
+    "scraper": ">= 0.0.0"
   },
   "engines": {
     "node": "0.10.x"
