@@ -70,6 +70,20 @@ Starting with the existing codebase set up with Gitter Setup instructions.
 
 **NOTE**: This heroku is in a different directory than the other adapter (with the same github code).
 
+### Fitbit Configuration
+
+In order to generate the `FITBIT_OAUTH_TOKEN` and `FITBIT_TOKEN_SECRET` you need to walk through the OAuth registration process.  In our case, we created a new Fitbit user specifically for chocobot.  Once this account was set up, we then created a new Fitbit application over at http://dev.fitbit.com/apps.  Once this app was created you are given the following:
+
+* Client (Consumer) Key
+* Client (Consumer) Secret
+* Temporary Credentials (Request Token) URL
+* Token Credentials (Acccess Token) URL
+* Authorize URL
+ 
+With these pieces of information, head over to https://www.runscope.com/oauth1_tool and paste all the values in.  From there, you will be given the permanent OAuth Token and OAuth Token Secret that the Fitbit script can then make use of.
+
+*NOTE* You will need to create a runscope account in order to use the above tool
+
 ### Running chocobot Locally
 
 You can test your hubot by running the following.
