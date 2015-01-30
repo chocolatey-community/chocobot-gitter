@@ -50,7 +50,7 @@ Starting with the existing codebase set up with Gitter Setup instructions.
 
 * `heroku create`
 * `heroku config:set HEROKU_URL="https://dry-cliffs-7209.herokuapp.com"` - this is to keep the heroku application alive.  The URL is generated from the `heroku create` command above
-* `heroku config:set HUBOT_ADAPTER="irc"` - this ensures we use the gitter2 adapter
+* `heroku config:set HUBOT_ADAPTER="irc"` - this ensures we use the irc adapter
 * `heroku config:set HUBOT_IRC_DEBUG="true"`
 * `heroku config:set HUBOT_IRC_NICK="choco-bot"`
 * `heroku config:set HUBOT_IRC_NICKSERV_USERNAME="choco-bot"`
@@ -79,7 +79,7 @@ In order to generate the `FITBIT_OAUTH_TOKEN` and `FITBIT_TOKEN_SECRET` you need
 * Temporary Credentials (Request Token) URL
 * Token Credentials (Acccess Token) URL
 * Authorize URL
- 
+
 With these pieces of information, head over to https://www.runscope.com/oauth1_tool and paste all the values in.  From there, you will be given the permanent OAuth Token and OAuth Token Secret that the Fitbit script can then make use of.
 
 *NOTE* You will need to create a runscope account in order to use the above tool
