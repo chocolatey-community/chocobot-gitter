@@ -53,11 +53,13 @@ Starting with the existing codebase set up with Gitter Setup instructions.
 * `heroku config:set HUBOT_ADAPTER="irc"` - this ensures we use the gitter2 adapter
 * `heroku config:set HUBOT_IRC_DEBUG="true"`
 * `heroku config:set HUBOT_IRC_NICK="choco-bot"`
+* `heroku config:set HUBOT_IRC_NICKSERV_USERNAME="choco-bot"`
+* `heroku config:set HUBOT_IRC_NICKSERV_PASSWORD="****"`
 * `heroku config:set HUBOT_IRC_PORT=6697`
 * `heroku config:set HUBOT_IRC_ROOMS="#chocolatey"`
 * `heroku config:set HUBOT_IRC_SERVER="chat.freenode.net"`
 * `heroku config:set HUBOT_IRC_SERVER_FAKE_SSL="true"`
-* `heroku config:set HUBOT_IRC_UNFLOOD="true"`
+* `heroku config:set HUBOT_IRC_UNFLOOD=800`
 * `heroku config:set HUBOT_IRC_USESSL="true"`
 * `heroku config:set FITBIT_CLIENT_ID="****"`
 * `heroku config:set FITBIT_CLIENT_SECRET="****"`
