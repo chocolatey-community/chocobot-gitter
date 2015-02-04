@@ -33,7 +33,8 @@
     "hubot-youtube": "^0.1.2",
     "scraper": ">= 0.0.0",
     "hubot-karma-classic": "~1.0.1",
-    "underscore": "~1.7.0"
+    "underscore": "~1.7.0",
+    "hubot-yolo": ">= 0.0.0"
   },
   "engines": {
     "node": "0.10.x"
