@@ -20,7 +20,6 @@
     "hubot-humanity": ">= 0.0.0",
     "hubot-irc": "^0.2.7",
     "hubot-maps": "0.0.1",
-    "hubot-pugme": "^0.1.0",
     "hubot-redis-brain": "0.0.2",
     "hubot-rules": "^0.1.0",
     "hubot-scripts": "^2.5.16",
