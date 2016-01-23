@@ -14,7 +14,7 @@
     "hubot-google-hangouts": ">= 0.0.0",
     "hubot-google-images": "^0.2.6",
     "hubot-google-translate": "^0.2.0",
-    "hubot-group-alias": "^2.1.1",
+    "hubot-group-alias": "^1.0.0",
     "hubot-help": "^0.1.1",
     "hubot-heroku-keepalive": "1.0.2",
     "hubot-humanity": ">= 0.0.0",
