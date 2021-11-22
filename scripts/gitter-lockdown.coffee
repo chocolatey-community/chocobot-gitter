@@ -20,10 +20,7 @@ module.exports = (robot) ->
     '6064213c6da037398478addf'  # jpruskin
   ]
 
-  if robot.brain.get('lockedRooms') == null
-    robot.brain.set 'lockedRooms', [
-      # '52a5ea24ed5ab0b3bf05002d'  # chocolatey
-      # '54c5e7f6db8155e6700f14bf'  # chocolatey/chocobot-gitter
+  lockedRooms = [
       '53190d1b5e986b0712efd33c'  # chocolatey/chocolatey.org
       '54d1cb5fdb8155e6700f6c9c'  # chocolatey/chocolatey-oneget
       '531444a55e986b0712efc533'  # chocolatey/chocolatey
@@ -46,23 +43,16 @@ module.exports = (robot) ->
       room = msg.message.room
 
     if msg.message.user.id in moderators
-      lockedRooms = robot.brain.get('lockedRooms')
-
       if "#{room}" in lockedRooms
         robot.logger.info "#{msg.message.user.name} requested #{room} be unlocked."
         lockedRooms = lockedRooms.filter (word) -> word isnt room
-        robot.brain.set 'lockedRooms', lockedRooms
       else
         robot.logger.info "#{msg.message.user.name} requested #{room} be locked."
         lockedRooms.push("#{room}")
-        robot.brain.set 'lockedRooms', lockedRooms
-
     else
       msg.reply "No. You're not allowed to initiate that, #{msg.message.user.name}."
 
   robot.hear /.+/i, (msg) ->
-    lockedRooms = robot.brain.get('lockedRooms') || []
-
     if msg.message.room in lockedRooms
       msg.finish()
 
